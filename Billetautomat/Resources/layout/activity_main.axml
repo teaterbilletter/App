@@ -1,68 +1,53 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" 
-                xmlns:app="http://schemas.android.com/apk/res-auto"
-                xmlns:tools="http://schemas.android.com/tools"
-                
-                android:layout_width="match_parent" 
-                android:layout_height="match_parent"
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:gravity="center"
+	android:layout_height="match_parent"
+	android:orientation="vertical"
             >
-
-        <EditText
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:hint="Skriv username:"
-        android:layout_centerVertical="true"
-        android:layout_centerHorizontal="true"
-        android:id="@+id/email"
-     />
-    
-    
-      <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_above="@id/email"
-         android:layout_centerInParent="true"
-       
-        android:textSize="25sp"
-        android:text="Skriv din email."/>
-    
-      <TextView
-         android:id="@+id/second"
-         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerInParent="true"
-        android:layout_below="@id/email"
-     
-        android:textSize="25sp"
-        android:text="Skriv dit password"
-        />
-    
-    
-       <EditText
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:hint="Skriv password:"
-        android:layout_below="@id/second"
-        android:layout_centerInParent="true"
-        android:id="@+id/password"
-     />
-        
-    
-    <Button
+	<TextView
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginBottom ="60sp"
+		android:gravity="center"
+		android:textSize="25sp"
+		android:text="Brugerlogin"
+		android:id="@+id/textView1" />
+	<EditText
 		android:layout_width="wrap_content"
 		android:layout_height="wrap_content"
-       android:layout_below="@id/password"
+		android:gravity="center"
+		android:hint="Brugernavn"
+		android:id="@+id/brugernavn" />
+
+	<EditText
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:gravity="center"
+		android:hint="Password"
+		android:password="true"
+		android:layout_marginBottom ="40sp"
+		android:layout_centerInParent="true"
+		android:id="@+id/password"
+     />
+	<Button
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:gravity="center"
+		android:backgroundTint= "@color/login"
 		android:minWidth="25px"
 		android:minHeight="25px"
-		android:id="@+id/button1"
-		android:text="Click her"
-     android:layout_centerInParent="true"/>
+		android:id="@+id/submitlogin"
+		android:text="Log Ind"
+		android:layout_centerInParent="true"/>
     
- 
     
    
     
   
     
         
-</RelativeLayout>
+</LinearLayout>
